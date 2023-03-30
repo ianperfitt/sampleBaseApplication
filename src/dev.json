@@ -1,0 +1,8 @@
+{
+    "imports": {
+      "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
+      "@solugenix/root-config": "//localhost:9000/solugenix-root-config.js",
+      "@solugenix/react-project": "http://localhost:9100/solugenix-react-project.js",
+      "@solugenix/angular-project": "http://localhost:9200/main.js"
+    }
+  }

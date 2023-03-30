@@ -11,7 +11,11 @@ module.exports = (webpackConfigEnv, argv) => {
     argv,
     disableHtmlGeneration: true,
   });
-
+  console.log(webpackConfigEnv, {
+    isLocal: webpackConfigEnv && !!webpackConfigEnv.isLocal,
+    orgName,
+    isDev:webpackConfigEnv && !!webpackConfigEnv.isDev
+  })
   return merge(defaultConfig, {
     // modify the webpack config however you'd like to by adding to this object
     plugins: [
@@ -19,8 +23,9 @@ module.exports = (webpackConfigEnv, argv) => {
         inject: false,
         template: "src/index.ejs",
         templateParameters: {
-          isLocal: webpackConfigEnv && webpackConfigEnv.isLocal,
+          isLocal: webpackConfigEnv && !!webpackConfigEnv.isLocal,
           orgName,
+          isDev:webpackConfigEnv && !!webpackConfigEnv.isDev
         },
       }),
     ],
