@@ -2,7 +2,7 @@
   "name": "@solugenix/root-config",
   "scripts": {
     "start:dev": "webpack serve --port 9000 --env isDev",
-    "start:local": "webpack serve --port 9000 --env isLocal",
+    "start": "webpack serve --port 9000 --env isLocal",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write .",
@@ -47,7 +47,8 @@
     "@types/webpack-env": "^1.16.2",
     "fs": "^0.0.1-security",
     "single-spa": "^5.9.3",
-    "single-spa-layout": "^1.6.0"
+    "single-spa-layout": "^1.6.0",
+    "zone.js": "^0.15.0"
   },
   "types": "dist/solugenix-root-config.d.ts"
 }
