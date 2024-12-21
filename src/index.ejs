@@ -47,9 +47,7 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@solugenix/root-config": "//localhost:9000/solugenix-root-config.js",
-        "@solugenix/react-project": "http://localhost:9100/solugenix-react-project.js",
         "@solugenix/angular-project": "http://localhost:9200/main.js"
       }
     }
@@ -59,10 +57,8 @@
     <script type="systemjs-importmap">
       {
         "imports": {
-          "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
           "@solugenix/root-config": "//localhost:9000/solugenix-root-config.js",
-          "@solugenix/react-project": "http://localhost:9100/solugenix-react-project.js",
-          "@solugenix/angular-project": "//localhost:9100/solugenix-react-project.js"
+          "@solugenix/angular-project": "//localhost:9002/main.js"
         }
       }
     </script>
@@ -71,7 +67,7 @@
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
     Learn more about why at https://single-spa.js.org/docs/ecosystem-angular/#zonejs
   -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
   <% if (isLocal) { %>
