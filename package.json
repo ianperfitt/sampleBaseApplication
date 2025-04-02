@@ -12,7 +12,7 @@
     "build:webpack": "webpack --mode=production",
     "build:types": "tsc",
     "serve:prod": "webpack serve --mode=production --port 9000",
-    "heroku-prebuild": "npm install --dev",
+    "heroku-prebuild": "npm install --dev"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
