@@ -48,7 +48,8 @@
     "fs": "^0.0.1-security",
     "single-spa": "^5.9.3",
     "single-spa-layout": "^1.6.0",
-    "zone.js": "^0.15.0"
+    "zone.js": "^0.15.0",
+    "webpack": "^5.75.0"
   },
   "types": "dist/solugenix-root-config.d.ts"
 }
